@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flight Price Predictor Demo Website</title>
+    <link rel="shortcut icon" href="#">
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="#">Flight Price Predictor Demo</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="content" style="margin-top:2em">{% block content %}{% endblock %}</div>
+        <div class="push"></div>
+    </div>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Made By: Arpit Verma on 30th August 2020.</span>
+      </div>
+    </footer>
+  </body>
+</html>
